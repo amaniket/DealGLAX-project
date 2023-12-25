@@ -1,0 +1,16 @@
+/* Track.css */
+
+/* Global styles can go here */
+.track-card {
+    border: 2px solid #e2e8f0;
+    background-color: #f7fafc;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.6);
+    padding: 6px;
+    margin: 16px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.track-card:hover {
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+}

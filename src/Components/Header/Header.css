@@ -1,0 +1,172 @@
+/* Header.css */
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+.navbar {
+    height: 100px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 0.5rem;
+    background-color: black;
+    box-shadow: 2px 12px 9px rgba(175, 238, 238, 0.7);
+}
+
+.login-button {
+    background-color: lightseagreen;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s background-color;
+}
+
+.no-line::before {
+    display: none;
+}
+
+.login-button:hover {
+    background-color: lightskyblue;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 23px;
+    position: relative;
+    padding: 5px; /* Adjusted padding to a positive value */
+    color: paleturquoise;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: tomato;
+    border-radius: 10px;
+    background-color: lightyellow;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: lightseagreen;
+        visibility: hidden;
+        transition: 0.3ms ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.offcanvas {
+    background-color: lightseagreen; /* Light gray background color */
+}
+
+.image {
+    width: 70px;
+    height: 65px;
+}
+
+.deal {
+    margin-left: 8px;
+    color: tomato;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.glax {
+    color: paleturquoise;
+    font-size: 45px;
+    font-weight: 350;
+    margin-right: 10px;
+}
+
+#offcanvasNavbarLabel {
+    background-color: lightseagreen;
+}
+
+/* Responsive Styles */
+
+.cart-img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px; /* Adjusted margin for better spacing */
+    margin-right: 5px; /* Adjusted margin for better spacing */
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 35%;
+    padding: 2px 3px;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center; /* Centered for better appearance */
+    margin-bottom: 10px; /* Adjusted margin for better spacing */
+}
+
+.main-cart {
+    display: flex;
+    flex-direction: column; /* Stack cart elements vertically on small screens */
+    align-items: center; /* Center the cart elements */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .login-button {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+
+    .deal,
+    .glax {
+        font-size: 30px;
+    }
+
+    .navbar-toggler {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        margin-bottom: 0; /* Remove margin for better spacing */
+    }
+
+    .cart-img {
+        margin: 5px 0; /* Adjusted margin for better spacing */
+    }
+}
